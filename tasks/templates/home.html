@@ -5,10 +5,10 @@
     <section class="card card-body">
       {% if user.is_authenticated %}
       <h1 class="text-center">Bienvenido {{user.username}}</h1>
-      <p>Como ya ingresaste puedes empezar a crear tareas, actualizarlas y eliminarlas</p>
+      <p class="text-center">Como ya ingresaste puedes empezar a crear tareas, actualizarlas y eliminarlas</p>
       {% else %}
       <h1 class="text-center">Django CRUD Project</h1>
-      <p>Por favor inicia sesión o crea un usario para poder usar la Aplicación</p>
+      <p class="text-center">Por favor inicia sesión o crea un usario para poder usar la Aplicación</p>
       {% endif %}
     </section>
   </main>
