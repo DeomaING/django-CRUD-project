@@ -4,11 +4,12 @@
   <main class="container py-5">
     <section class="card card-body">
       {% if user.is_authenticated %}
-      <h1 class="text-center">{{user.username}}</h1>
+      <h1 class="text-center">Bienvenido {{user.username}}</h1>
+      <p>Como ya ingresaste puedes empezar a crear tareas, actualizarlas y eliminarlas</p>
       {% else %}
       <h1 class="text-center">Django CRUD Project</h1>
+      <p>Por favor inicia sesión o crea un usario para poder usar la Aplicación</p>
       {% endif %}
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ipsa doloremque blanditiis ratione iure sint esse reprehenderit unde tempora. Ut cum facere et sit iste atque aut delectus maiores placeat. Nisi modi, perspiciatis architecto id ut fuga tempora ratione. Animi saepe commodi, autem delectus aspernatur aliquam! Est quibusdam modi nisi saepe explicabo eligendi sequi recusandae alias, eveniet vitae, fugit pariatur? Accusantium consectetur minus doloremque vero molestiae sit itaque hic, inventore corporis dolorem a perspiciatis ut quaerat facere eius assumenda explicabo quae! Ratione molestias molestiae accusantium odio veniam tenetur facere? Id. Necessitatibus voluptate non quas provident iste doloremque repudiandae molestiae dolore, est amet cupiditate suscipit dolores iusto? Consectetur iusto minus, dolorum, aspernatur labore obcaecati ipsam ratione distinctio magni, suscipit libero provident!</p>
     </section>
   </main>
 {% endblock %}

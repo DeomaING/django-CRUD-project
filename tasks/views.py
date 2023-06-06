@@ -30,7 +30,7 @@ def signup(request):
                 user.save()
                 login(request,user)
                 print(user.is_authenticated)
-                return redirect('tasks')
+                return redirect('home')
 
             except IntegrityError:
                 return render(request, 'signup.html', {
@@ -98,7 +98,7 @@ def signin(request):
         
         else:
             login(request, user)
-            return redirect('tasks')
+            return redirect('home')
 
 @login_required
 def createNewTask(request):
